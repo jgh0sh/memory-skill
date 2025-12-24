@@ -88,6 +88,7 @@ Signals that qualify for automatic capture (examples):
 - explicit stable preference language: "always", "never", "from now on", "please avoid", "I prefer"
 - repeated corrections: the user repeatedly corrects the same formatting or workflow
 - stable working conventions: preferred timezone, naming conventions, default output formats
+- long-running errors or complex, multi-step procedures with unfavourable outcomes and a final fix (e.g., repeated test timeout tuning until stable); capture a short lesson learned with issue, outcome, and fix
 
 If the signal is ambiguous or likely temporary:
 - you may store it only if clearly useful
@@ -168,6 +169,7 @@ Each entry should be a small object with:
 - `source`: short provenance note (examples: "explicit user preference", "repeated signal", "inferred")
 - `confidence`: one of `low`, `medium`, `high`
 - `tags`: optional small list of strings
+For "lesson learned" entries, prefer a small map value with `issue`, `outcome`, and `fix`, and use a `lessons.*` key.
 
 #### `confidence`
 
