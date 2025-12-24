@@ -1,9 +1,6 @@
 ---
 name: session-memory-bootstrap
-description: |
-  Session start bootstrap. Use this skill at the beginning of EVERY new session, before answering anything else.
-  Purpose: load persistent user memory from the repo-root memories.md file (create it if missing), then apply it to the rest of the session.
-  If this is not a new session, only use this skill when memory is relevant or when the user asks to remember or forget something.
+description: "Session start bootstrap. Use this skill at the beginning of EVERY new session, before answering anything else. Purpose: load persistent user memory from the repo-root memories.md file (create it if missing), then apply it to the rest of the session. If this is not a new session, only use this skill when memory is relevant or when the user asks to remember or forget something."
 metadata:
   version: "1.0"
   priority: "startup"
